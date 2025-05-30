@@ -1,288 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lily Shoes</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-    }
-
-    .header {
-      background: url('background header.jpg') no-repeat center center;
-      background-size: cover;
-      padding: 30px 10px;
-      color: #1e1c1c;
-      position: relative;
-    }
-
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    .header-gambar {
-      width: 190px;
-      height: 140px;
-      border-radius: 150px 0 0 150px;
-      overflow: hidden;
-      box-shadow: 0 0 50px rgba(0,0,0,0.2);
-      margin-top: -140px;
-      margin-left: 890px;
-    }
-
-    .header-gambar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .left-section {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      margin-left: 30px;
-    }
-
-    .logo {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      margin-left: -15px;
-      margin-top: -3px;
-    }
-
-    .slogan h1 {
-      margin: 0px 0;
-      font-size: 35px;
-      font-weight: bold;
-      margin-top: 8px;
-    }
-
-    .right-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      width: 100%;
-    }
-
-    .nav {
-      display: flex;
-      gap: 45px;
-      margin-top: -50px;
-      margin-left: 20px;
-      margin-right: 10px;
-    }
-
-    .nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: bold;
-      margin-top: -150px;
-    }
-
-    .search-bar {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: -130px;
-      width: 100%;
-      margin-left: -9px;
-    }
-
-    .search-bar input {
-      padding: 10px 16px;
-      border: 1px solid #ccc;
-      border-radius: 20px;
-      width: 280px;
-      font-size: 16px;
-    }
-
-    .search-bar button {
-      margin-left: -35px;
-      background: none;
-      border: none;
-      font-size: 22px;
-      cursor: pointer;
-    }
-
-    .search-tombol {
-      margin-left: -45px;
-      margin-top: 3px;
-    }
-
-    .icons {
-      position: absolute;
-      top: 20px;
-      right: 130px;
-      display: flex;
-      gap: 40px;
-      font-size: 22px;
-    }
-
-    .product-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      padding: 50px 50px;
-    }
-
-    .product-card {
-      background-color: #ffffff;
-      width: 160px;
-      height: 200px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
-      text-align: center;
-      position: relative;
-      padding-bottom: 25px;
-      margin-top: 10px;
-    }
-
-    .product-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-top: -50px;
-    }
-
-    .label-baru {
-      position: absolute;
-      top: 15px;
-      left: 10px;
-      background-color: white;
-      color: black;
-      font-size: 10px;
-      padding: 3px 6px;
-      font-weight: bold;
-      border-radius: 3px;
-    }
-
-    .product-card h3 {
-      font-size: 11px;
-      margin: 10px 0 10px;
-    }
-
-    .product-card .price {
-      font-size: 12px;
-      color: #333;
-      margin-bottom: 15px;
-    }
-
-    .product-card button {
-      padding: 8px 15px;
-      border: 1px solid #333;
-      background-color: transparent;
-      color: #333;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 12px;
-      transition: all 0.3s ease;
-    }
-
-    .product-card button:hover {
-      background-color: #575656;
-      color: #fff;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      padding: 5px;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 12px;
-      padding-left: 100px;
-      margin-top: 10px;
-    }
-
-    footer .footer-menu {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-right: 980px;
-    }
-
-    footer .footer-menu img {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin-left: 15px;
-    }
-
-    footer .footer-menu div {
-      margin-left: 10px;
-    }
-
-    footer .footer-menu h2 {
-      font-size: 20px;
-      margin: 0;
-    }
-
-    footer .footer-menu p {
-      margin: 0;
-    }
-
-    .social-icons {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-right: -850px;
-    }
-
-    @media screen and (max-width: 768px) {
-      .logo-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .slogan h1 {
-        font-size: 22px;
-      }
-
-      .nav {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .search input {
-        width: 80%;
-      }
-
-      .about {
-        flex-direction: column;
-        padding: 20px;
-      }
-
-      .info-right {
-        margin-left: 0;
-        margin-top: 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/web_penjualan.css">
 </head>
+
 <body>
   <header class="header">
-  <div class="icons">
-    <img width="29" height="29" src="https://img.icons8.com/material/24/shopping-cart--v1.png" alt="shopping-cart--v1"/>
-    <a href="halaman_dashboard_web_penjualan.html">
-      <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/exit.png" alt="exit"/>
-    </a>
-  </div>
+    <div class="icons">
+      <img width="29" height="29" src="https://img.icons8.com/material/24/shopping-cart--v1.png"
+        alt="shopping-cart--v1" />
+      <a href="halaman_dashboard_web_penjualan.html">
+        <img width="30" height="30" src="https://img.icons8.com/fluency-systems-filled/48/exit.png" alt="exit" />
+      </a>
+    </div>
 
     <div class="header-container">
       <div class="left-section">
-        <img src="logo sepatu.jpg" alt="Logo" class="logo" />
+        <img src="./gambar/logo sepatu.jpg" alt="Logo" class="logo" />
         <div class="slogan">
           <h1>Temukan</h1>
           <h1>Sepatu Yang</h1>
@@ -292,7 +30,7 @@
 
       <div class="right-section">
         <div class="header-gambar">
-          <img src="sepatu_header.jpg" alt="gambar-sepatu" />
+          <img src="./gambar/sepatu_header.jpg" alt="gambar-sepatu" />
         </div>
 
         <nav class="nav">
@@ -305,7 +43,9 @@
           <input type="text" placeholder="CARI PRODUK" />
           <div class="search-tombol">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 50 50">
-              <path d="M 21 3 C 11.6 3 4 10.6 4 20s7.6 17 17 17c3.4 0 6.5-1 9.1-2.7l12.3 12.3 4.2-4.2-12.1-12.1C36.7 27.4 38 23.9 38 20c0-9.4-7.6-17-17-17zM21 7c7.2 0 13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z"></path>
+              <path
+                d="M 21 3 C 11.6 3 4 10.6 4 20s7.6 17 17 17c3.4 0 6.5-1 9.1-2.7l12.3 12.3 4.2-4.2-12.1-12.1C36.7 27.4 38 23.9 38 20c0-9.4-7.6-17-17-17zM21 7c7.2 0 13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z">
+              </path>
             </svg>
           </div>
         </div>
@@ -313,10 +53,10 @@
     </div>
   </header>
 
-    <div class="product-container">
+  <div class="product-container">
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_1.jpg" alt="Sepatu Adizero Ubersonic 5" />
+      <img src="./gambar/sepatu_adidas_1.jpg" alt="Sepatu Adizero Ubersonic 5" />
       <h3>SEPATU TENIS<br>ADIZERO UBERSONIC 5</h3>
       <div class="price">Rp. 2.000.000</div>
       <button>Masukkan Keranjang</button>
@@ -324,7 +64,7 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_7.jpg" alt="Sepatu Harden Volume 9" />
+      <img src="./gambar/sepatu_adidas_7.jpg" alt="Sepatu Harden Volume 9" />
       <h3>SEPATU HARDEN<br>VOLUME 9</h3>
       <div class="price">Rp. 2.600.000</div>
       <button>Masukkan Keranjang</button>
@@ -332,7 +72,7 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_2.jpg" alt="Sepatu Gazelle Indoor" />
+      <img src="./gambar/sepatu_adidas_2.jpg" alt="Sepatu Gazelle Indoor" />
       <h3>SEPATU GAZELLE<br>INDOOR</h3>
       <div class="price">Rp. 1.800.000</div>
       <button>Masukkan Keranjang</button>
@@ -340,7 +80,7 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_3.jpg" alt="Sepatu Adistar 3 Running Shoes" />
+      <img src="./gambar/sepatu_adidas_3.jpg" alt="Sepatu Adistar 3 Running Shoes" />
       <h3>ADISTAR 3<br>RUNNING SHOES</h3>
       <div class="price">Rp. 2.200.000</div>
       <button>Masukkan Keranjang</button>
@@ -348,7 +88,7 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_4.jpg" alt="Sepatu Anthony Edwards 1 Low Trainers" />
+      <img src="./gambar/sepatu_adidas_4.jpg" alt="Sepatu Anthony Edwards 1 Low Trainers" />
       <h3>ANTHONY EDWARDS<br>1 LOW TRAINERS</h3>
       <div class="price">Rp. 1.700.000</div>
       <button>Masukkan Keranjang</button>
@@ -356,7 +96,7 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_5.jpg" alt="Sepatu Barreda" />
+      <img src="./gambar/sepatu_adidas_5.jpg" alt="Sepatu Barreda" />
       <h3><br>SEPATU BARREDA</h3>
       <div class="price">Rp. 900.000</div>
       <button>Masukkan Keranjang</button>
@@ -364,47 +104,47 @@
 
     <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_6.jpg" alt="Sepatu Gazella Indoor X Liberty London" />
+      <img src="./gambar/sepatu_adidas_6.jpg" alt="Sepatu Gazella Indoor X Liberty London" />
       <h3>SEPATU GAZELLE INDOOR<br>X LIBERTY LONDON</h3>
       <div class="price">Rp. 2.000.000</div>
       <button>Masukkan Keranjang</button>
     </div>
 
-  <div class="product-card">
+    <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_8.jpg" alt="Sepatu Adizero Aruku" />
+      <img src="./gambar/sepatu_adidas_8.jpg" alt="Sepatu Adizero Aruku" />
       <h3>SEPATU<br>ADIZERO ARUKU</h3>
       <div class="price">Rp. 2.100.000</div>
       <button>Masukkan Keranjang</button>
     </div>
 
-  <div class="product-card">
+    <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_9.jpg" alt="Sepatu Adidas Switchu Fwd 2.0 Shoes" />
+      <img src="./gambar/sepatu_adidas_9.jpg" alt="Sepatu Adidas Switchu Fwd 2.0 Shoes" />
       <h3>ADIDAS SWITCHU<br>FWD 2.0 SHOES</h3>
       <div class="price">Rp. 1.440.000</div>
       <button>Masukkan Keranjang</button>
     </div>
 
-  <div class="product-card">
+    <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_10.jpg" alt="Sepatu Lightstrike Moc" />
+      <img src="./gambar/sepatu_adidas_10.jpg" alt="Sepatu Lightstrike Moc" />
       <h3>SEPATU<br>LIGHTSTRIKE MOC</h3>
       <div class="price">Rp. 950.000</div>
       <button>Masukkan Keranjang</button>
     </div>
 
-  <div class="product-card">
+    <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_11.jpg" alt="Sepatu Trail Running Terrex Soulstride" />
+      <img src="./gambar/sepatu_adidas_11.jpg" alt="Sepatu Trail Running Terrex Soulstride" />
       <h3>SEPATU TRAIL RUNNING<br>TERREX SOULSTRIDE</h3>
       <div class="price">Rp. 1.400.000</div>
       <button>Masukkan Keranjang</button>
     </div>
 
-  <div class="product-card">
+    <div class="product-card">
       <span class="label-baru">BARU</span>
-      <img src="sepatu_adidas_12.jpg" alt="Sepatu Response Runner" />
+      <img src="./gambar/sepatu_adidas_12.jpg" alt="Sepatu Response Runner" />
       <h3>SEPATU<br>RESPONSE RUNNER</h3>
       <div class="price">Rp. 850.000</div>
       <button>Masukkan Keranjang</button>
@@ -418,13 +158,14 @@
         <p><strong>Email:</strong><span style="margin-left: 5px;">LilyShoes@gmail.com</span></p>
       </div>
       <div class="social-icons">
-        <img src="logo_instagram.png" alt="Logo instagram"/>
-        <img src="logo_in.png" alt="Logo in"/>
-        <img src="logo_twitter.jpg" alt="Logo twitter"/>
-        <img src="logo_facebook.png" alt="Logo facebook"/>
-        <img src="logo_youtube.png" alt="Logo youtube"/>
+        <img src="./gambar/logo_instagram.png" alt="Logo instagram" />
+        <img src="./gambar/logo_in.png" alt="Logo in" />
+        <img src="./gambar/logo_twitter.jpg" alt="Logo twitter" />
+        <img src="./gambar/logo_facebook.png" alt="Logo facebook" />
+        <img src="./gambar/logo_youtube.png" alt="Logo youtube" />
       </div>
     </div>
   </footer>
 </body>
+
 </html>

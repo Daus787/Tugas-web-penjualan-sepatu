@@ -4,132 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Login Page</title>
-  <style>
-    * {
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  height: 100vh;
-  background: url(background.jpeg);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login-container {
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  padding: 60px;
-  border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
-  width: 100%;
-  max-width: 650px;
-}
-
-.login-container h1 {
-  font-size: 56px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.login-container p {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
-  font-size: 18px;
-}
-
-.form-group {
-  margin-bottom: 25px;
-}
-
-label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.input-icon {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 0 12px;
-}
-
-.input-icon img {
-  width: 24px;
-  height: 24px;
-}
-
-.input-icon input {
-  border: none;
-  outline: none;
-  padding: 14px 0;
-  font-size: 16px;
-  width: 100%;
-  background: transparent;
-}
-
-.login-button {
-  width: 100%;
-  padding: 16px;
-  background-color: #e49b14;
-  color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.login-button:hover {
-  background-color: #c87d0b;
-}
-
-.options {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 15px;
-}
-
-.options a {
-  color: #e49b14;
-  text-decoration: none;
-}
-
-.options a:hover {
-  text-decoration: underline;
-}
-
-/* Popup styles */
-.popup {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ff4d4d;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  display: none;
-  z-index: 999;
-}
-
-.popup.success {
-  background-color: #4caf50;
-}
-  </style>
+  <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
@@ -160,4 +35,5 @@ label {
     </div>
   </div>
 </body>
+
 </html>

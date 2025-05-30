@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
 
-        header("Location: index.php");
+        header("Location: halaman_dashboard_web_penjualan.html");
         exit();
       } else {
         echo "Password salah!";
